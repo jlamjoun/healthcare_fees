@@ -14,7 +14,6 @@ score_types = [
     rw.score_types.RMSE(name='rmse', precision=3),
 ]
 
-
 def get_cv(X, y):
     cv = ShuffleSplit(n_splits=8, test_size=0.5, random_state=57)
     return cv.split(X)
